@@ -37,6 +37,7 @@ font-family: 'Ubuntu', sans-serif;
 .button{
     border-radius: 6px;
     width: 100px;
+    margin-left: 30px;
 
 }
 .burger-img{
