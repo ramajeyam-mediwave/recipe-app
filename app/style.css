@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+h1{
+    text-align: center;
+    
+}
+.left{
+    display: flex;
+    border: solid white;
+    width: 250px;
+    padding-left: 20px;
+
+    
+}
+#recipe-form {
+    display: flex;
+    flex-direction: column;
+    
+
+   gap: 10px;
+   padding-left: 20px;
+   padding-top: 20px;
+   
+  }
+body{
+    background-color: #FEFFAC;
+    font-family: 'Lora', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Teko', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+}
+
+.button{
+    border-radius: 6px;
+    width: 100px;
+
+}
+.burger-img{
+    width: 100px;
+    height: 100px;
+    padding-left: 30px;
+    
+}
