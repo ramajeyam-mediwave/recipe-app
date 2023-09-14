@@ -1,45 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Montserrat:wght@500&family=Playfair+Display:ital@1&family=Teko:wght@500&family=Ubuntu:ital,wght@0,500;1,700&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Montserrat:wght@500&family=Playfair+Display:ital@1&family=Teko:wght@500&family=Ubuntu:ital,wght@0,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>recipe app</title>
     <script src="script.js" defer></script>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
+    <!-- <script src="script-array.js" defer></script> -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="left">
-        
-    <form id="recipe-form">
-        <h1>Add Recipe</h1> 
+      <form id="recipe-form">
+        <h1>Add Recipe</h1>
         <label for="recipe-title">Title</label>
         <input
           type="text"
           name="recipe-title"
           placeholder="Enter movie name"
           id="recipe-title"
-          
         />
         <label for="prepare-time">Time</label>
         <input
           type="time"
           name="prepare-time"
           placeholder="Enter movie year"
-          id="prepare-time" />
-          <label for="steps">steps</label>
-          <textarea name="steps" id="steps" cols="0" rows="0"></textarea>
-          <img class="burger-img" src="https://img.freepik.com/free-photo/double-hamburger-isolated-white-background-fresh-burger-fast-food-with-beef-cream-cheese_90220-1192.jpg?w=2000" alt="burger">
-        <input type="submit" value="Add recipe" id="submit" class="button"/>
-        
+          id="prepare-time"
+        />
+        <label for="steps">steps</label>
+        <textarea name="steps" cols="40" rows="4" id="steps"></textarea>
+        <label for="img-link">Img-link</label>
+        <input type="text" id="img-link" />
+        <input type="submit" value="Add recipe" id="submit" class="button" />
       </form>
+      <div class="total-count">Total Recipies
+        <h6 id="value"></h6>
+      </div>
     </div>
 
-      <div id="app">
-
-      </div>
-</body>
+    <div id="app"></div>
+  </body>
 </html>
