@@ -24,8 +24,6 @@ function makerecipeDiv(recipe) {
   const h4 = document.createElement("h4");
   h4.innerText = recipe["rec_steps"];
 
-  
-
   //delete button
   const deleteBtn = document.createElement("button");
   deleteBtn.innerText = "Delete";
@@ -49,6 +47,8 @@ function removeRecipe(recipeId) {
   favrecipe = filteredArray;
   updaterecipeListUI();
   //By adding this we can directly remove from local
+  const  totalcount= document.querySelector("#value");
+  totalcount.innerText = favrecipe.length;
   saveToLocalStorage();
 }
 
